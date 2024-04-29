@@ -1,14 +1,79 @@
+.loadinglogo {
+  width: 85vw;
+}
+
+#mealrow :any-link {
+  color: red;
+}
+
+#foodcol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 95vw;
+  background-color: white;
+}
+
+#food {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+  z-index: 9999; /* Ensure the loading overlay appears on top of other content */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for the loader */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #0000 calc(50% - 0.5em), #000 0 calc(50% + 0.5em), #0000 0) right/300% 100%;
+  animation: l22 2s infinite;
+}
+
+.loader::before {
+  content: "Betöltés...";
+  color: #0000;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(135deg, #000 calc(50% - 0.5em), #fff 0 calc(50% + 0.5em), #000 0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l22 {
+  100% {
+    background-position: left;
+  }
+}
+
+#page-content {
+  display: none; /* Initially hide the page content */
+}
+
 :any-link {
   color: rgb(244, 211, 148);
 }
 
-selector {
-  word-wrap: break-word;     
-  white-space: -moz-pre-wrap; 
-  white-space: pre-wrap;      
-}
-
-body {  
+body {
   background: linear-gradient(white, rgb(245, 230, 204));
   background-repeat: repeat;
   background-color: white;
@@ -30,6 +95,7 @@ body {
 .carousel-inner .carousel-item:first-of-type {
   position: relative;
 }
+
 .carousel-inner .active {
   opacity: 1;
 }
@@ -41,7 +107,7 @@ body {
 }
 
 #logo {
-  height: 45vh; 
+  height: 45vh;
 }
 
 .intro {
@@ -51,11 +117,8 @@ body {
 .footer {
   background-color: #333;
   color: #fff;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  margin-top: 3rem;
+  padding: 1rem;
+  margin-top: 3rem; 
 }
 
 .f-img {
@@ -75,35 +138,27 @@ body {
 }
 
 #email {
-font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 #together {
   margin-top: 2rem;
 }
 
-
-@media screen and (min-width: 576px){
-  .c-item {
-    height: 48vh;
-  }
-  .intro {
-    font-size: 1.125rem;
-  }
-}
-
 .video-container {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
 }
+
 .video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-} 
+}
 
 #deluxeBackground {
   background-image: url('media/6-7/2_6.jpg');
@@ -133,13 +188,13 @@ font-size: 0.8rem;
   color: rgb(36, 29, 16);
   font-family: comic-sans;
   font-style: italic;
-  background-color: rgba(194, 189, 189,0.5);
+  background-color: rgba(194, 189, 189, 0.5);
   width: 100%;
   font-size: 3rem;
 }
 
 .apartmentDescription {
-  font-family:'comic-sans';
+  font-family: 'comic-sans';
   font-style: italic;
 }
 
@@ -168,9 +223,22 @@ font-size: 0.8rem;
   align-items: center;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (min-width: 576px) {
   .apartmentTitle {
     font-size: 3.5rem;
+  }
+  .loadinglogo {
+    width: 70vw;
+  }
+  .c-item {
+    height: 48vh;
+  }
+  .intro {
+    font-size: 1.125rem;
+  }
+  .loader {
+    font-size: 1.75rem;
+  
   }
 }
 
@@ -178,60 +246,92 @@ font-size: 0.8rem;
   .c-item {
     height: 50vh;
   }
+
   .intro {
     font-size: 1.25rem;
   }
+
   .fh5 {
     margin-top: 0rem;
   }
+
   .d-col {
     margin-top: 6rem;
   }
+
   .apartmentTitle {
     font-size: 6rem;
   }
+
   #deluxeBackground {
     height: 50vh;
   }
+
   #standardBackground {
     height: 50vh;
   }
+
   .list-unstyled-mobile {
     list-style: circle;
     text-align: left;
   }
+
   #church {
     height: 40vh;
   }
+
   .freetime-div {
     justify-content: end;
+  }
+  .loader {
+    font-size: 2rem;
+  }
+  #card {
+    width: 85vw;
   }
 }
 
 @media screen and (min-width: 992px) {
   .c-item {
-    height: 60vh;
+    height: 55vh;
   }
+
   .intro {
     font-size: 1.5rem;
   }
+
   #email {
     font-size: 1rem;
   }
+
   .apartmentDescription {
-    line-height: 2rem;  
+    line-height: 2rem;
   }
+
   .apartmentTitle {
     font-size: 8rem;
   }
+
   #deluxeBackground {
     height: 55vh;
   }
+
   #standardBackground {
     height: 55vh;
   }
+
   #church {
     height: 55vh;
+  }
+
+  .loadinglogo {
+    width: 50vw;
+  }
+  .loader {
+    font-size: 2.25rem;
+  }
+  #card {
+    width: 75vw;
   }
 }
 
@@ -239,20 +339,34 @@ font-size: 0.8rem;
   .c-item {
     height: 87vh;
   }
+
   .apartmentDescription {
-    line-height: 3rem;  
+    line-height: 3rem;
   }
+
   .apartmentTitle {
     font-size: 10rem;
   }
+
   #deluxeBackground {
     height: 60vh;
   }
+
   #standardBackground {
     height: 60vh;
   }
+
   #church {
     height: 60vh;
   }
-}
 
+  .loadinglogo {
+    width: 40vw;
+  }
+  .loader {
+    font-size: 2.5rem;
+  }
+  #card {
+    width: 50vw;
+  }
+}
