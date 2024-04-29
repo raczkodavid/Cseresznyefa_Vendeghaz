@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cseresznyefa Vendégház - Delux</title>
+  <title>Cseresznyefa Vendégház - Deluxe</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -13,155 +13,177 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="media/other/logo.png" alt="Cseresznyefe Vendégház" height="50" class="me-2">
-        <span class="navtext">Cseresznyefa Vendégház</span>
-      </a>
-      <!-- Mobile Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><span class="navtext">Kezdőlap</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span class="navtext">Apartmanjaink</span>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Deluxe</a></li>
-              <li><a class="dropdown-item" href="standard.html">Standard</a></li>
+  <!-- Loading Screen -->
+  <div class="loading-overlay">
+    <img src="media/other/logo.png" class="loadinglogo" alt="">
+    <div class="loader"></div>
+  </div>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="media/other/logo.png" alt="Cseresznyefe Vendégház" height="50" class="me-2">
+          <span class="navtext">Cseresznyefa Vendégház</span>
+        </a>
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><span class="navtext">Kezdőlap</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navtext">Apartmanjaink</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><b>Deluxe</b></a></li>
+                <li><a class="dropdown-item" href="standard.html">Standard</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><span class="navtext">Rólunk</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dorog.html"><span class="navtext">Dorog</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="freetime.html"><span class="navtext">Szabadidő</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meal.html"><span class="navtext">Étkezés</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html"><span class="navtext">Foglalás</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><span class="navtext">Kapcsolat</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <!-- Hero image -->
+      <div class="text-center" id="deluxeBackground">
+        <h1 class="apartmentTitle">Deluxe</h1>
+      </div>
+    </section>
+    <section>
+      <div class="container-md intro mb-4">
+        <article>
+          <p class="apartmentDescription justified">
+            Az apartman 6+1 fő számára biztosít kényelmes szállást teljes komfortban. 2 hálószoba, 1 kádas, zuhanyzós és 1
+            zuhanyzós fürdőszoba, amerikai konyhás nappali nyújt teljes kényelmet. A
+            vendégek a főzőlappal, sütővel, hűtőszekrénnyel, konyhai eszközökkel és mikrohullámú sütővel
+            felszerelt konyhában készíthetik el ételeiket. A kertre néző apartmanban síkképernyős TV-ék, a
+            nappaliban beltéri játékok is várják a gyerekkel érkező társaságokat. Apartmanunk néhány jellemzője:
+          </p>
+        </article>
+        <div class="row g-1">
+          <div class="col-md-5 intro">
+            <ul class="list-unstyled list-unstyled-mobile">
+              <li>Önálló 82 m²-es apartman</li>
+              <li>2 hálószoba</li>
+              <li>1 fürdőszoba káddal, zuhanyzóval</li>
+              <li>1 fürdőszoba zuhanyzóval</li>
+              <li>3 kanapéágy</li>
+              <li>Amerikai konyhás nappali</li>
+              <li>Légkondicionálás</li>
+              <li>Síkképernyős tévé</li>
+              <li>Hűtőszekrény</li>
+              <li>Kávéfőző</li>
+              <li>Mikrohullámú sütő</li>
+              <li>Vízforraló</li>
+              <li>Kenyérpirító</li>
+              <li>Ingyen wifi</li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html"><span class="navtext">Rólunk</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dorog.html"><span class="navtext">Dorog</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="freetime.html"><span class="navtext">Szabadidő</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="meal.html"><span class="navtext">Étkezés</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="book.html"><span class="navtext">Foglalás</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"><span class="navtext">Kapcsolat</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="text-center" id="deluxeBackground">
-    <h1 class="apartmentTitle">Deluxe</h1>
-  </div>
-  <div class="container-md intro mb-4">
-    <p class="apartmentDescription">
-      Az apartman 5-7 fő számára biztosít kényelmes szállást teljes komfortban. 2 hálószoba, 1 kádaszuhanyzó és 1 zuhanyzós fürdőszoba, amerikai konyhás nappali nyújt teljes kényelmet. A
-      vendégek a főzőlappal, sütővel, hűtőszekrénnyel, konyhai eszközökkel és mikrohullámú sütővel
-      felszerelt konyhában készíthetik el ételeiket. A kertre néző apartmanban síkképernyős TV-ék, a
-      nappaliban beltéri játékok is várják a gyerekkel érkező társaságokat. Apartmanunk néhány jellemzője:
-    </p>
-    <div class="row g-1" style="font-family: comic-sans;">
-      <div class="col-md-5 intro">
-        <ul class="list-unstyled list-unstyled-mobile">
-          <li>Önálló 70 m²-es apartman</li>
-          <li>2 hálószoba</li>
-          <li>1 fürdőszoba káddal, zuhanyzóval</li>
-          <li>1 fürdőszoba zuhanyzóval</li>
-          <li>3 kanapéágy</li>
-          <li>Amerikai konyhás nappali</li>
-          <li>Légkondicionálás</li>
-          <li>Síkképernyős tévé</li>
-          <li>Hűtőszekrény</li>
-          <li>Kávéfőző</li>
-          <li>Mikrohullámú sütő</li>
-          <li>Vízforraló</li>
-          <li>Kenyérpirító</li>
-          <li>Ingyen wifi</li>
-        </ul>
-      </div>
-      <div class="col d-none d-lg-block intro" id="deluxecol">
-        <img src="media/6-7/2_13.jpg" class="roundedimage" width="100%" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item">
-          <img src="media/6-7/2_5.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom=0">
+          </div>
+          <div class="col d-none d-md-flex intro apartmentCol">
+            <img src="media/6-7/2_13.jpg" class="roundedimage apartmentImg" alt="">
           </div>
         </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_1.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_10.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_11.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_12.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_13.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_14.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_1.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_2.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="media/6-7/2_7.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="media/6-7/2_5.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom=0">
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_1.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_10.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_11.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_12.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_13.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_14.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_1.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_2.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="media/6-7/2_7.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Előző</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Következő</span>
+          </button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-md-6">
           <h5><u>Elérhetőségek</u></h5>
           <p class="f">☎️: <a href="tel:+3630-548-4698">+36/30-548-4698</a></p>
-          <p class="f" id="email">✉️: <a href="mailto: cseresznyefavendeghazdorog@gmail.com">cseresznyefavendeghazdorog@gmail.com</a></p>
+          <p class="f" id="email">✉️: <a
+              href="mailto:cseresznyefavendeghazdorog@gmail.com">cseresznyefavendeghazdorog@gmail.com</a></p>
           <p class="f">Facebook: <a href="facebook.com/">Cseresznyefa Vendégház</a></p>
         </div>
         <div class="col-md-6">

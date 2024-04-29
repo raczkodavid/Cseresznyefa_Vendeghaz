@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cseresznyefa Vendégház</title>
+  <title>Cseresznyefa Vendégház - Szabadidő</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -19,7 +19,7 @@
     <div class="loader"></div>
   </div>
   <!-- Navbar -->
-  <div>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -53,7 +53,7 @@
               <a class="nav-link" href="dorog.html"><span class="navtext">Dorog</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="navtext">Szabadidő</span></a>
+              <a class="nav-link" href="#"><span class="navtext"><b>Szabadidő</b></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="meal.html"><span class="navtext">Étkezés</span></a>
@@ -68,97 +68,166 @@
         </div>
       </div>
     </nav>
-    <div class="container intro">
-      <div class="row">
-        <h3 class="text-center pb-3">Látnivalók, nevezetességek:</h3>
-        <div class="col-md-7">
-          <p>Német Nemzetiségi Emlékház (280 m)</p>
-          <p>Schmidt Sándor Agora (350 m)</p>
-          <p>Gáthy Zoltán Városi Könyvtár és Helytörténeti Múzeum (350 m)</p>
-          <p>Szent József plébániatemplom (400 m)</p>
-          <p>Szent Borbála bányásztemplom (450 m)</p>
-          <p>Mária-Barlang (600 m)</p>
-          <p>Reimann Bányászattörténeti Miniverzum (850 m)</p>
-          <p>Kálvária (1 km)</p>
-          <p>Dorogi Sportmúzeum (1 km)</p>
-          <p>Buzánszky Jenő Stadion (1 km)</p>
-          <p>József Attila Művelődési Ház (1,5 km)</p>
-          <p>Jubileum tér (2 km)</p>
-          <p>Bányász Emlékház (1,5 km)</p>
-          <p>Esztergom Bazilika, Vár (10 km)</p>
-        </div>
-        <div class="col-md-5 freetime-div">
-          <img src="media/other/templom.jpeg" id="church" alt="">
-        </div>
+  </header>
+    <main>
+      <div class="container intro">
+        <section>
+          <div class="row">
+            <h3 class="text-center pb-3">Látnivalók, nevezetességek:</h3>
+            <div class="col-md-7">
+              <ul class="freetimels">
+                <li>Német Nemzetiségi Emlékház (280 m)</li>
+                <li>Schmidt Sándor Agora (350 m)</li>
+                <li>Gáthy Zoltán Városi Könyvtár és Helytörténeti Múzeum (350 m)</li>
+                <li>Szent József plébániatemplom (400 m)</li>
+                <li>Szent Borbála bányásztemplom (450 m)</li>
+                <li>Mária-Barlang (600 m)</li>
+                <li>Reimann Bányászattörténeti Miniverzum (850 m)</li>
+                <li>Kálvária (1 km)</li>
+                <li>Dorogi Sportmúzeum (1 km)</li>
+                <li>Buzánszky Jenő Stadion (1 km)</li>
+                <li>József Attila Művelődési Ház (1,5 km)</li>
+                <li>Jubileum tér (2 km)</li>
+                <li>Bányász Emlékház (1,5 km)</li>
+                <li>Esztergom Bazilika, Vár (10 km)</li>
+              </ul>
+            </div>
+            <div class="col-md-5 freetime-div">
+              <figure>
+                <img src="media/other/templomthumbnail.jpeg" alt="Dorog - Szent József templom"
+                  class="freetimeImg img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal1">
+                <figcaption>Dorog - Szent József templom</figcaption>
+              </figure>
+
+              <!-- Modal 1: Szent József templom -->
+              <div class="modal modal-lg text-center fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel1">Dorog - Szent József templom</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="media/other/templom.jpeg" alt="Dorog - Szent József templom" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <h3 class="text-center pb-3">Kirándulási lehetőségek</h3>
+            <div class="col-md-7">
+              <ul class="freetimels">
+                <li>Esztergom - Strázsa-hegyi barlang, Sátorkőpusztai barlang</li>
+                <li>Piliscsaba - Dévényi Antal kilátó, Gomba szikla, Ördögoltár szikla</li>
+                <li>Pilisszentkereszt - Boldog Özséb kilátó, Pilis tető, Ciszterci kolostorrom, Vaskapu szikla, Vaskapu
+                  völgy</li>
+                <li>Pilisszentkereszt, Dobogókő - Zsivány sziklák</li>
+                <li>Pilisborosjenő - Teve-szikla</li>
+                <li>Kesztölc - Ariadne barlangrendszer</li>
+                <li>Pilisborosjenő - Egri vár másolata, Kevélyhegyi Levendulamező</li>
+                <li>Baja - Sándor Metternich-kastély</li>
+                <li>Bajót - Jankovich-barlang</li>
+                <li>Visegrád - Fellegvár</li>
+              </ul>
+            </div>
+            <div class="col-md-5 freetime-div">
+              <figure>
+                <img src="media/other/pilisborosjenothumbnail.png" alt="Pilisborojenő - Egri vár másolata"
+                  class="freetimeImg img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal2">
+                <figcaption>Pilisborosjenő - Egri vár másolata</figcaption>
+              </figure>
+              <!-- Modal 2: Pilisborosjenő - Egri vár másolata -->
+              <div class="modal modal-lg text-center fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">Pilisborosjenő - Egri vár másolata</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="media/other/pilisborosjeno.png" alt="Pilisborojenő - Egri vár másolata" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <h3 class="text-center pb-3">Programok</h3>
+            <div class="col-md-7">
+              <ul class="freetimels">
+                <li>Balaya játszóház (900 m) - játszóház, kávézó</li>
+                <li>Nipl Stefánia uszoda (950 m) - uszoda, szauna, masszázs</li>
+                <li>Öböl Music Beach (1,4 km) - strand, autós találkozók</li>
+                <li>József Attila Művelődési Ház (1,5 km) - TEKE, színház, stand-up előadások</li>
+                <li>Lóga-tó (1,9 km) - horgászat</li>
+                <li>Öböl Beach Búvár Centrum (2,3 km) - búvárkodás</li>
+                <li>Palatinus-tó strandfürdő (2,4 km) - strand</li>
+                <li>Danger Zone - Szabadulószoba (8,5 km)</li>
+                <li>Piac Esztergom (9 km) - gasztro programok, régiségvásárok</li>
+                <li>Szent István uszoda, Esztergom (10 km)</li>
+                <li>Aquasziget Esztergom, Esztergom (10 km) - élményfürdő</li>
+                <li>Vadas Termálfürdő Párkány Szlovákia (11,5 km) - termál-, élményfürdő</li>
+                <li>Hilltop Borbirtok Neszmély (30 km) - borkóstoló, borvacsora</li>
+                <li><span lang="en">Geocaching</span></li>
+              </ul>
+            </div>
+            <div class="col-md-5 freetime-div">
+              <figure>
+                <img src="media/other/neszmelythumbnail.png" alt="Neszmély - Hilltop Borbirtok"
+                  class="freetimeImg img-thumbnail" data-bs-toggle="modal" data-bs-target="#modal3">
+                <figcaption>Neszmély - Hilltop Borbirtok</figcaption>
+              </figure>
+            </div>
+            <!-- Modal 3: Neszmély -->
+            <div class="modal modal-lg text-center fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Pilisborojenő - Egri vár másolata</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="media/other/neszmely.png" alt="Pilisborojenő - Egri vár másolata" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+      </section>
+    </main>
+  <footer class="footer">
+    <div class="container-fluid text-center">
       <div class="row">
-        <h3 class="text-center pb-3">Kirándulási lehetőségek</h3>
-        <div class="col-md-7">
-          <p>Esztergom - Strázsa-hegyi barlang, Sátorkőpusztai barlang</p>
-          <p>Piliscsaba - Dévényi Antal kilátó, Gomba szikla, Ördögoltár szikla</p>
-          <p>Pilisszentkereszt - Boldog Özséb kilátó, Pilis tető, Ciszterci kolostorrom, Vaskapu szikla, Vaskapu völgy
-          </p>
-          <p>Pilisszentkereszt, Dobogókő - Zsivány sziklák</p>
-          <p>Pilisborosjenő - Teve-szikla</p>
-          <p>Kesztölc - Ariadne barlangrendszer</p>
-          <p>Pilisborosjenő - Egri vár másolata, Kevélyhegyi Levendulamező</p>
-          <p>Baja - Sándor Metternich-kastély</p>
-          <p>Bajót - Jankovich-barlan</p>
-          <p>Videgrád - Fellegvár</p>
+        <div class="col-md-6">
+          <h5><u>Elérhetőségek</u></h5>
+          <p class="f">☎️: <a href="tel:+3630-548-4698">+36/30-548-4698</a></p>
+          <p class="f" id="email">✉️: <a
+              href="mailto:cseresznyefavendeghazdorog@gmail.com">cseresznyefavendeghazdorog@gmail.com</a></p>
+          <p class="f">Facebook: <a href="facebook.com/">Cseresznyefa Vendégház</a></p>
         </div>
-        <div class="col-md-5 freetime-div">
-          <img src="pilisborosjeno.png" id="church" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <h3 class="text-center pb-3">Programok</h3>
-        <div class="col-md-7">
-          <p>Balaya játszóház (900 m) - játszóház, kávézó</p>
-          <p>Nipl Stefánia uszoda (950 m) - uszoda, szauna, masszázs</p>
-          <p>Öböl Music Beach (1,4 km) - strand, autós találkozók</p>
-          <p>József Attila Művelődési Ház (1,5 km) - TEKE, színház, stand-up előadások</p>
-          <p>Lóga-tó (1,9 km) - horgászat</p>
-          <p>Öböl Beach Búvár Centrum (2,3 km) - búvárkodás</p>
-          <p>Palatinus-tó strandfürdő (2,4 km) - strand</p>
-          <p>Danger Zone - Szabadulószoba (8,5 km)</p>
-          <p>Piac Esztergom (9 km) - gasztro programok, régiségvásárok</p>
-          <p>Szent István uszoda, Esztergom (10 km)</p>
-          <p>Aquasziget Esztergom, Esztergom (10 km) - élményfürdő</p>
-          <p>Vadas Termálfürdő Párkány Szlovákia (11,5 km) - termál-, élményfürdő</p>
-          <p>Hilltop Borbirtok Neszmély (30 km) - borkóstoló, borvacsora</p>
-          <p>Geocaching</p>
-        </div>
-        <div class="col-md-5 freetime-div">
-          <img src="neszmely.png" id="church" alt="">
+        <div class="col-md-6">
+          <h5 class="fh5"><u>Általános információk</u></h5>
+          <p class="f"><a href="vendegtajekoztato.pdf">vendegtajekoztato.pdf</a></p>
+          <p class="f">Booklet <a href="booklet.pdf">(English version)</a></p>
+          <p class="f">NTAK azonosító: EG24090226</p>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <h5><u>Elérhetőségek</u></h5>
-            <p class="f">☎️: <a href="tel:+3630-548-4698">+36/30-548-4698</a></p>
-            <p class="f" id="email">✉️: <a
-                href="mailto: cseresznyefavendeghazdorog@gmail.com">cseresznyefavendeghazdorog@gmail.com</a></p>
-            <p class="f">Facebook: <a href="facebook.com/">Cseresznyefa Vendégház</a></p>
-          </div>
-          <div class="col-md-6">
-            <h5 class="fh5"><u>Általános információk</u></h5>
-            <p class="f"><a href="vendegtajekoztato.pdf">vendegtajekoztato.pdf</a></p>
-            <p class="f">Booklet <a href="booklet.pdf">(English version)</a></p>
-            <p class="f">NTAK azonosító: EG24090226</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
-</div>
 
 </html>

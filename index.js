@@ -1,14 +1,14 @@
-window.addEventListener('load', function () {
-    const loadingOverlay = document.querySelector('.loading-overlay');
-    const pageContent = document.getElementById('page-content');
-  
-    loadingOverlay.style.display = 'none';
-});
+window.onload = function() {
+    // Function to hide the loading overlay with a delay
+    function hideLoadingOverlayWithDelay(delay) {
+        setTimeout(function() {
+            const loadingOverlay = document.querySelector('.loading-overlay');
+            if (loadingOverlay) {
+                loadingOverlay.style.display = 'none';
+            }
+        }, delay);
+    }
 
-document.getElementById('reset-btn').addEventListener('click', function(event) {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-  
-    // Reset the form to its initial state
-    document.getElementById('reservation-form').reset();
-  });
+    // Call the function to hide the loading overlay with a delay of 500 milliseconds
+    hideLoadingOverlayWithDelay(600); // Adjust the delay as needed
+};
