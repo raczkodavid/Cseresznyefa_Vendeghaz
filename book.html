@@ -18,9 +18,11 @@
         <img src="media/other/logo.png" class="loadinglogo" alt="">
         <div class="loader"></div>
     </div>
+    <!-- Visually hidden jump link -->
+    <a href="#tartalom" class="visually-hidden-focusable">Ugrás a tartalomra</a>
     <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="media/other/logo.png" alt="Cseresznyefe Vendégház" height="50" class="me-2">
@@ -61,41 +63,40 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"><span class="navtext"><b>Foglalás</b></span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><span class="navtext">Kapcsolat</span></a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main id="tartalom">
         <form action="mailto:rotsu0wn8@gmail.com" method="post" enctype="text/plain">
             <div class="container-fluid mt-3 card">
                 <fieldset>
                     <h2 class="text-center">Foglalás</h2>
                     <div class="mb-3">
-                        <label for="name" class="form-label"><b>Név</b></label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Add meg a neved!">
+                        <label for="name" class="form-label" style="width: 100%;"><b>Név</b></label>
+                        <input type="text" maxlength="30" class="form-control" id="name" name="name"
+                            placeholder="Add meg a neved!">
                     </div>
                     <div class="mb-3">
-                        <label for="emailform" class="form-label"><b>Email cím</b></label>
-                        <input type="email" class="form-control" id="emailform" name="email"
-                            placeholder="jozsi@gmail.com">
+                        <label for="emailform" class="form-label" style="width: 100%;"><b>Email cím</b></label>
+                        <input type="email" maxlength="50" class="form-control" id="emailform" name="email"
+                            placeholder="sample@gmail.com">
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="form-label"><b>Telefonszám</b></label>
-                        <input type="tel" class="form-control" id="phone" name="phone"
+                        <label for="phone" class="form-label"
+                            style="width: 100%;"><b>Telefonszám</b></label>
+                        <input type="tel"  maxlength="20" class="form-control" id="phone" name="phone"
                             placeholder="Add meg a telefonszámod!">
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <label for="arrival" class="form-label"><b>Érkezés</b></label>
-                            <input type="date" class="form-control" id="arrival" name="arrival">
+                            <label for="checkin" class="form-label"><b>Érkezés</b></label>
+                            <input type="date" class="form-control" id="checkin" name="checkin">
                         </div>
                         <div class="col">
-                            <label for="departure" class="form-label"><b>Távozás</b></label>
-                            <input type="date" class="form-control" id="departure" name="departure">
+                            <label for="checkout" class="form-label"><b>Távozás</b></label>
+                            <input type="date" class="form-control" id="checkout" name="checkout">
                         </div>
                     </div>
                     <div class="mb-3">
@@ -132,7 +133,8 @@
                     </div>
                     <div class="mb-3">
                         <div class="form-floating">
-                            <textarea class="form-control" id="commentTextArea" name="comment"></textarea>
+                            <textarea class="form-control" maxlength="200" id="commentTextArea" name="comment"
+                                style="height: 20vh;"></textarea>
                             <label for="commentTextArea">Megjegyzés: </label>
                         </div>
                     </div>
@@ -145,21 +147,23 @@
                 </fieldset>
             </div>
         </form>
+        <!-- Visually hidden jump link-->
+        <a href="#" class="visually-hidden-focusable">Ugrás a tetejére</a>
     </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-md-6">
-                    <h5><u>Elérhetőségek</u></h5>
+                    <h5>Elérhetőségek</h5>
                     <p class="f">☎️: <a href="tel:+3630-548-4698">+36/30-548-4698</a></p>
                     <p class="f" id="email">✉️: <a
-                            href="mailto:cseresznyefavendeghazdorog@gmail.com">cseresznyefavendeghazdorog@gmail.com</a>
+                            href="mailto:cseresznyefavendeghazdorog@gmail.com" id="email">cseresznyefavendeghazdorog@gmail.com</a>
                     </p>
                     <p class="f">Facebook: <a href="facebook.com/">Cseresznyefa Vendégház</a></p>
                 </div>
                 <div class="col-md-6">
-                    <h5 class="fh5"><u>Általános információk</u></h5>
+                    <h5 class="fh5">Általános információk</h5>
                     <p class="f"><a href="vendegtajekoztato.pdf">vendegtajekoztato.pdf</a></p>
                     <p class="f">Booklet <a href="booklet.pdf">(English version)</a></p>
                     <p class="f">NTAK azonosító: EG24090226</p>

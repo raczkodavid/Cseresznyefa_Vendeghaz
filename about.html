@@ -14,15 +14,15 @@
 
 <body>
   <!-- Loading Screen -->
-  <section>
-    <div class="loading-overlay">
-      <img src="media/other/logo.png" class="loadinglogo" alt="">
-      <div class="loader"></div>
-    </div>
-  </section>
+  <div class="loading-overlay">
+    <img src="media/other/logo.png" class="loadinglogo" alt="">
+    <div class="loader"></div>
+  </div>
+  <!-- Visually hidden jump link -->
+  <a href="#tartalom" class="visually-hidden-focusable">Ugrás a tartalomra</a>
   <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img src="media/other/logo.png" alt="Cseresznyefe Vendégház" height="50" class="me-2">
@@ -63,49 +63,60 @@
             <li class="nav-item">
               <a class="nav-link" href="book.html"><span class="navtext">Foglalás</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"><span class="navtext">Kapcsolat</span></a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <section>
+  <main id="tartalom">
     <article>
+      <h1 class="text-center mt-4">RÓLUNK</h1>
       <div class="container intro justified">
-        <h1 class="text-center mt-4">RÓLUNK</h1>
-        <p>A vendégházunk Budapesttől 38km-re Dorog város szélén családi házas övezetben helyezkedik el, kiváló
+        <p class="leftborder-orange">A vendégházunk Budapesttől 38km-re Dorog város szélén családi házas övezetben
+          helyezkedik el, kiváló
           megközelíthetőséggel.</p>
-        <p>Buszmegálló 300 m-re, a vasútállomás 14 perc sétára található. Vonatok fél óránként közlekednek Esztergomba
+        <p class="leftborder-orange">Buszmegálló 300 m-re, a vasútállomás 14 perc sétára található. Vonatok fél óránként
+          közlekednek Esztergomba
           és
           Budapestre is egyaránt.</p>
-        <p>Érkezés és távozás - A szobát érkezés napján délután 3 órától foglalhatják el. Korábbi érkezést csak
-          foglaltságtól függően tudunk biztosítani, kérem, egyeztessenek erről indulás előtt. A vendégházban nem működik
+        <p class="leftborder-orange">Érkezés és távozás - A szobát érkezés napján délután 3 órától foglalhatják el.
+          Korábbi érkezést csak
+          foglaltságtól függően tudunk biztosítani, kérem, egyeztessenek erről indulás előtt. A vendégházban nem
+          működik
           24
           órás portaszolgálat, amennyiben 17 óra után érkeznek, kérem, jelezzék előre.</p>
         <p>Utazás: A szobát a vendégek reggel
           10 óráig vehetik igénybe a távozás napján. Későbbi távozásesetében (az igényt kérjük előre jelezni) a
           vendégház
           további extraköltségeket számolhat fel.</p>
-        <p>Gyerekeknek 0-2 éves korig ingyenes.</p>
+        <p class="leftborder-red">Gyerekeknek 0-2 éves korig ingyenes.</p>
         <p>A szálláshelyen kisállatot nem áll módunkban fogadni.</p>
-        <p>Fizetési feltételek: A megrendelés véglegesítéséhez 50 % foglaló megfizetése szükséges a foglalás
+        <p class="leftborder-red">Fizetési feltételek: A megrendelés véglegesítéséhez 50 % foglaló megfizetése szükséges
+          a foglalás
           visszaigazolásától számított 72 órán belül, 7 napon belüli foglalás esetén a foglalástól számított 24 órán
           belül.
           A foglalót banki átutalással tudják rendezni, a közleményben kérjük, a vendég nevét tüntessék fel. A
           számlázási
           adatokat kérem, hogy a foglaló megfizetésével egy időben küldjék meg részünkre.</p>
         <p>Felhívjuk figyelmét, hogy a szállásdíj megfizetése érkezéskor esedékes, készpénzben, bankkártyával vagy
-          szépkártyával. Az idegenforgalmi adó mértéke 18 éves kor felett 50,- Ft/fő/éj, mely készpénzben fizetendő.</p>
-        <p>Lemondási feltételek: Érkezés előtt 5 napon belüli lemondás esetén a megrendelt szolgáltatás 100%-a, mint
+          szépkártyával. Az idegenforgalmi adó mértéke 18 éves kor felett 50,- Ft/fő/éj, mely készpénzben fizetendő.
+        </p>
+        <p class="leftborder-red">Lemondási feltételek: Érkezés előtt 5 napon belüli lemondás esetén a megrendelt
+          szolgáltatás 100%-a, mint
           lemondási díj kerül kiszámlázásra.</p>
-        <p>Megrendelés módosítása: Már véglegesített és visszaigazolt foglalás más dátumra történő áthelyezésére, vagy a
+        <p>Megrendelés módosítása: Már véglegesített és visszaigazolt foglalás más dátumra történő áthelyezésére, vagy
+          a
           létszám módosítására az aktuálisan érvényben lévő árak és a szabad kapacitás függvényében van lehetőség.
           Módosítás
           esetén a befizetett foglaló adott naptári évben használható fel, de maximum 90 napon belül.</p>
-        <p>Bank automaták: OTP 170 m, K&H 350 m, MBH 700 m, UniCredit 1,3 km.</p>
-        <p>NTAK azonosító: EG24090226</p>
+        <p><b>NTAK azonosító: EG24090226</b></p>
+        <p>Bank automaták</p>
+        <ul>
+          <li>OTP 170 m</li>
+          <li>K&H 350 m</li>
+          <li>MBH 700 m</li>
+          <li>UniCredit 1,3 km</li>
+        </ul>
         <p>Fizetési lehetőségek:</p>
         <ul>
           <li>Elfogadható bankkártya típusok: VISA, MASTERCARD, MAESTRO</li>
@@ -121,19 +132,21 @@
         </ul>
       </div>
     </article>
-  </section>
+    <!-- Visually hidden jump link-->
+    <a href="#" class="visually-hidden-focusable">Ugrás a tetejére</a>
+  </main>
   <footer class="footer">
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-md-6">
-          <h5><u>Elérhetőségek</u></h5>
+          <h5>Elérhetőségek</h5>
           <p class="f">☎️: <a href="tel:+3630-548-4698">+36/30-548-4698</a></p>
-          <p class="f">✉️: <a
-              href="mailto:cseresznyefavendeghazdorog@gmail.com">cseresznyefavendeghazdorog@gmail.com</a></p>
+          <p class="f">✉️: <a href="mailto:cseresznyefavendeghazdorog@gmail.com"
+              id="email">cseresznyefavendeghazdorog@gmail.com</a></p>
           <p class="f">Facebook: <a href="facebook.com/">Cseresznyefa Vendégház</a></p>
         </div>
         <div class="col-md-6">
-          <h5 class="fh5"><u>Általános információk</u></h5>
+          <h5 class="fh5">Általános információk</h5>
           <p class="f"><a href="vendegtajekoztato.pdf">vendegtajekoztato.pdf</a></p>
           <p class="f">Booklet <a href="booklet.pdf">(English version)</a></p>
           <p class="f">NTAK azonosító: EG24090226</p>

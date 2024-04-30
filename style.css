@@ -90,17 +90,20 @@ a:visited {
 }
 
 .wrapper {
-  flex: 5;
+  flex: 1;
 }
 
 body {
   background: linear-gradient(white, rgb(245, 230, 204));
   background-repeat: repeat;
-  background-color: white;
   font-family: sans-serif, Arial, Helvetica, 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.navbar {
+  background-color: #fff2fa;
 }
 
 .freetimels {
@@ -141,6 +144,7 @@ body {
 
 #logo {
   height: 45vh;
+  margin-top: -3rem;
 }
 
 .intro {
@@ -165,6 +169,17 @@ body {
 
 .apartmentImg {
   width: 100%;
+}
+
+
+.leftborder-green{
+  border-left: solid green 0.35rem;
+  padding-left: 0.5rem;
+}
+
+.leftborder-red{
+  border-left: solid red 0.35rem;
+  padding-left: 0.5rem;
 }
 
 .roundedimage {
