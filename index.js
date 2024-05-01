@@ -1,6 +1,6 @@
-window.onload = function() {
+window.onload = function () {
     function hideLoadingOverlayWithDelay(delay) {
-        setTimeout(function() {
+        setTimeout(function () {
             const loadingOverlay = document.querySelector('.loading-overlay');
             if (loadingOverlay) {
                 loadingOverlay.style.display = 'none';
