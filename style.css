@@ -12,6 +12,12 @@
 
 }
 
+#tb td, th{
+  border: black 0.1rem solid;
+  padding: 1rem;
+  text-align: center;
+}
+
 #foodcol {
   display: flex;
   justify-content: center;
@@ -93,7 +99,7 @@ a:visited {
   flex: 1;
 }
 
-#mealtitle {
+#titleontop {
   margin-top: 1rem;
 }
 
@@ -241,7 +247,7 @@ body {
 }
 
 .apartmentDescription {
-  font-family: 'comic-sans';
+  font-family: 'comic sans, Times New Roman, Times, serif';
 }
 
 .apartmentCol {
