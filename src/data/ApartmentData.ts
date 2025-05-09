@@ -1,4 +1,4 @@
-import type { Apartment, ApartmentImage } from "@localTypes/types";
+import type { Apartment, ApartmentImage } from "@/types/types";
 
 // helper function to make accessing images easy after importing them with glob
 function getApartmentImages(
@@ -12,15 +12,24 @@ function getApartmentImages(
 
 // instead of this export ApartmentImage[]
 export const deluxeImages = getApartmentImages(
-  import.meta.glob("@deluxe/*.webp", { eager: true, import: "default" })
+  import.meta.glob("@images/apartments/deluxe/*.webp", {
+    eager: true,
+    import: "default",
+  })
 );
 
 export const standardImages = getApartmentImages(
-  import.meta.glob("@standard/*.webp", { eager: true, import: "default" })
+  import.meta.glob("@images/apartments/standard/*.webp", {
+    eager: true,
+    import: "default",
+  })
 );
 
 export const outsideImages = getApartmentImages(
-  import.meta.glob("@outside/*.webp", { eager: true, import: "default" })
+  import.meta.glob("@images/apartments/outside/*.webp", {
+    eager: true,
+    import: "default",
+  })
 );
 
 export const apartments: Apartment[] = [

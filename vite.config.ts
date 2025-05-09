@@ -7,23 +7,10 @@ export default defineConfig({
   plugins: [vue(), tailwindcss(), vueDevTools()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@assets": path.resolve(__dirname, "./src/assets"),
-      "@components": path.resolve(__dirname, "./src/components"),
-      "@images": path.resolve(__dirname, "./src/assets/images"),
-      "@deluxe": path.resolve(
-        __dirname,
-        "./src/assets/images/apartments/deluxe"
-      ),
-      "@standard": path.resolve(
-        __dirname,
-        "./src/assets/images/apartments/standard"
-      ),
-      "@outside": path.resolve(
-        __dirname,
-        "./src/assets/images/apartments/outside"
-      ),
-      "@localTypes": path.resolve(__dirname, "./src/types"),
+      "@": path.resolve(__dirname, "src"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@assets": path.resolve(__dirname, "src/assets"),
+      "@images": path.resolve(__dirname, "src/assets/images"),
     },
   },
 });

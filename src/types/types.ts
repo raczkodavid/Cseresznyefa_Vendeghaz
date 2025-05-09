@@ -21,4 +21,5 @@ export interface Apartment {
   size: number;
   bedrooms: number;
   bathrooms: number;
+  floor: number;
 }

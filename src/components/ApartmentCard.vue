@@ -67,10 +67,8 @@
 </template>
 
 <script setup lang="ts">
-// import props.apartment data
 import type { Apartment } from "@/types/types";
 
-// define the props
 const props = defineProps<{
   apartment: Apartment;
   isSelected: boolean;

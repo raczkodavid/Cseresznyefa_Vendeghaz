@@ -1,181 +1,101 @@
 <template>
-  <div class="relative">
-    <!-- Hero section -->
-    <section
-      class="relative flex items-center justify-center text-white text-center overflow-hidden"
+  <div class="relative min-h-screen bg-gray-100">
+    <!-- Hero Section -->
+    <div
+      ref="hero"
+      class="relative py-20 bg-gradient-to-b from-white to-gray-200"
     >
-      <!-- Background image with parallax effect -->
-      <img
-        :src="heroImage"
-        alt="Hero background"
-        class="absolute inset-0 w-full h-full object-cover z-0 transform transition-transform duration-1000 ease-out"
-        :class="{ 'scale-110': isScrolled }"
-      />
-
-      <!-- Overlay with gradient -->
       <div
-        class="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-gray-700/50 z-10"
+        class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.3),transparent)] opacity-50"
       ></div>
-
-      <!-- Hero content with fade-in animation -->
-      <div class="relative z-20 px-4 max-w-4xl animate-fade-in-up">
-        <h1
-          class="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-2xl tracking-tight"
-        >
-          Fedezze fel vendégházunkat
-        </h1>
-        <p
-          class="text-xl md:text-2xl text-white/90 drop-shadow-md leading-relaxed"
-        >
-          Ez az oldal részletes információkat nyújt a szálláshelyről,
-          szolgáltatásainkról, és arról, mitől lesz különleges az itt töltött
-          idő.
-        </p>
-        <a
-          href="#features"
-          class="mt-8 inline-block px-8 py-3 bg-amber-500 text-white font-semibold rounded-full shadow-lg hover:bg-amber-600 hover:scale-105 transition-all duration-300"
-        >
-          Tudjon meg többet
-        </a>
-      </div>
-    </section>
-
-    <!-- Feature cards section, visible on page load -->
-    <section id="features" class="py-16 bg-gray-50 text-gray-800 relative z-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid md:grid-cols-3 gap-10">
-          <!-- Card 1 -->
-          <div
-            class="relative p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 group"
-          >
-            <div
-              class="absolute inset-0 bg-amber-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative text-amber-600 mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-14 h-14 mx-auto transform group-hover:scale-110 transition-transform duration-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 17l4 4 4-4m0-10l-4-4-4 4"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-3 text-gray-900">
-              Prémium Kényelem
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              Tágas, jól felszerelt apartmanok, melyek minden igényt
-              kielégítenek.
-            </p>
+      <div class="container mx-auto px-4 relative z-10">
+        <!-- Title and Text in Flex Layout -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+          <!-- Title on the Left -->
+          <div class="md:w-1/2">
+            <h1
+              v-motion
+              :initial="heroVariants.hidden"
+              :visible="
+                isHeroVisible ? heroVariants.visible(0) : heroVariants.hidden
+              "
+              class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 tracking-tight leading-tight"
+            >
+              LUXURY SERVICED APARTMENTS
+            </h1>
           </div>
 
-          <!-- Card 2 -->
-          <div
-            class="relative p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 group"
-          >
-            <div
-              class="absolute inset-0 bg-amber-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative text-amber-600 mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-14 h-14 mx-auto transform group-hover:scale-110 transition-transform duration-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2m0-6v2m0 8v2m6-6h-2m-8 0H6"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-3 text-gray-900">
-              Lélegzetelállító Környezet
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              Csodás kilátás és természetközeli élmény minden évszakban.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="relative p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 group"
-          >
-            <div
-              class="absolute inset-0 bg-amber-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative text-amber-600 mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-14 h-14 mx-auto transform group-hover:scale-110 transition-transform duration-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 10h2l3 9h8l3-9h2"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-3 text-gray-900">
-              Központi Elhelyezkedés
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              Könnyen megközelíthető helyszín, közel a főbb látnivalókhoz.
+          <!-- Text on the Right -->
+          <div class="md:w-1/2 mt-4 md:mt-0">
+            <p
+              v-motion
+              :initial="heroVariants.hidden"
+              :visible="
+                isHeroVisible ? heroVariants.visible(1) : heroVariants.hidden
+              "
+              class="text-lg md:text-xl text-gray-600 leading-relaxed"
+            >
+              Modern Fully Equipped Spaces for Tourists And Contractors—Short Or
+              Long Stays Available
             </p>
           </div>
         </div>
+
+        <!-- Hero Image Below -->
+        <div
+          v-motion
+          :initial="heroVariants.hidden"
+          :visible="
+            isHeroVisible ? heroVariants.visible(2) : heroVariants.hidden
+          "
+          class="w-full"
+        >
+          <img
+            src="@images/apartments/deluxe/2_7.webp"
+            alt="Luxury Apartment Interior"
+            class="h-150 rounded-lg shadow-lg object-cover"
+          />
+        </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted, onUnmounted } from "vue";
-import heroImage from "@deluxe/2_11.webp";
+<script setup lang="ts">
+import { ref } from "vue";
+import { useIntersectionObserver, useDebounceFn } from "@vueuse/core";
 
-const isScrolled = ref(false);
-
-const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50;
+// Hero animation variants
+const heroVariants = {
+  hidden: { opacity: 0, y: 20, scale: 0.95 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeInOut",
+      delay: i * 0.15,
+      type: "tween",
+    },
+  }),
 };
 
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
+// Hero visibility tracking
+const hero = ref<HTMLElement | null>(null);
+const isHeroVisible = ref(true); // Start visible for initial load
 
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
+// Debounce visibility updates to prevent rapid triggers
+const debouncedSetVisible = useDebounceFn((visible: boolean) => {
+  isHeroVisible.value = visible;
+}, 100);
+
+// Intersection observer to detect hero visibility
+useIntersectionObserver(
+  hero,
+  ([{ isIntersecting }]) => {
+    debouncedSetVisible(isIntersecting);
+  },
+  { rootMargin: "-100px", threshold: 0.1 }
+);
 </script>
-
-<style scoped>
-/* Tailwind animation */
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 1s ease-out forwards;
-}
-</style>

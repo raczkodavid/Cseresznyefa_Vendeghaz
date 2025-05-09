@@ -17,7 +17,7 @@
           <img
             :src="image.src"
             :alt="`Apartment view ${index + 1}`"
-            class="w-full h-[350px] md:h-[500px] object-cover"
+            class="w-auto h-full object-cover"
           />
         </div>
       </div>

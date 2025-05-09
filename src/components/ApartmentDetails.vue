@@ -74,7 +74,7 @@
 </template>
 
 <script setup lang="ts">
-import Carousel from "./Carousel.vue";
+import Carousel from "@components/Carousel.vue";
 import type { Apartment } from "@/types/types";
 
 const emit = defineEmits<{

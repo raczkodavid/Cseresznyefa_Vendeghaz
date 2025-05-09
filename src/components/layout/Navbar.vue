@@ -99,8 +99,8 @@
 </template>
 
 <script setup lang="ts">
-import logo from "@assets/images/logos/logo3.png";
 import { ref, onMounted } from "vue";
+import logo from "@images/logos/logo3.png";
 
 // State: current theme
 const theme = ref(localStorage.getItem("theme") || "light");
