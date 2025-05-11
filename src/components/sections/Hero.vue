@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import Description from "@components/Description.vue";
-import Carousel from "@components/Carousel.vue";
+import Carousel from "@/components/sections/Carousel.vue";
 import { deluxeImages } from "@/data/ApartmentData";
 </script>
 

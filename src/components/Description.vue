@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import DuplexFeature from "@components/DuplexFeature.vue";
+import DuplexFeature from "@components/apartment/DuplexFeature.vue";
 
 const features = [
   "Ingyenes WiFi az egész területen",

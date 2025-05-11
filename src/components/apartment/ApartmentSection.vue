@@ -38,8 +38,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { apartments } from "@/data/ApartmentData";
-import ApartmentCard from "@components/ApartmentCard.vue";
-import ApartmentDetails from "@components/ApartmentDetails.vue";
+import ApartmentCard from "@components/apartment/ApartmentCard.vue";
+import ApartmentDetails from "@components/apartment/ApartmentDetails.vue";
 import type { Apartment } from "@/types/types";
 
 const selectedApartment = ref<Apartment | null>(null);
