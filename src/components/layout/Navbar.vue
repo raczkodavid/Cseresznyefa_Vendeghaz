@@ -120,6 +120,5 @@ const toggleTheme = () => {
 // Set theme on first load
 onMounted(() => {
   applyTheme();
-  console.log(theme.value);
 });
 </script>

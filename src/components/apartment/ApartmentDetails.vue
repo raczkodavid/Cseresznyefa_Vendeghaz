@@ -89,5 +89,3 @@ const props = defineProps<{
   apartment: Apartment;
 }>();
 </script>
-
-<style scoped></style>

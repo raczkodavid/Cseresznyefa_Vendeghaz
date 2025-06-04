@@ -48,5 +48,3 @@ const handleApartmentClick = (apartment: Apartment) => {
   selectedApartment.value = apartment;
 };
 </script>
-
-<style scoped></style>

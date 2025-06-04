@@ -217,7 +217,7 @@ const bankDetailsLists = [
         emoji: "🌐",
         text: "IBAN SZÁM: HU17 1040 2496 5052 6976 5390 1002",
       },
-      { emoji: "🚫", text: "SWIFT/BIC: -" },
+      { emoji: "🚫", text: "SWIFT/BIC: OKHB HUHB" },
     ],
   },
 ];

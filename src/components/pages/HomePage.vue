@@ -75,36 +75,31 @@
           :whileInView="contentVariants.visible"
           class="bg-base-100 rounded-2xl shadow-xl overflow-hidden"
         >
-          <div class="grid md:grid-cols-2 gap-8">
+          <div class="grid xl:grid-cols-2 gap-8">
             <!-- Left Column: Text Content -->
-            <div class="p-8 md:p-12">
+            <div class="p-8 xl:p-12">
               <h2 class="text-4xl font-display font-bold text-primary mb-8">
                 Rólunk
               </h2>
               <div class="space-y-6">
                 <div class="relative pl-6 border-l-2 border-primary/20">
                   <p class="text-lg font-light leading-relaxed">
-                    A Cseresznyefa Vendégház egy modern, kényelmes szálláshely
-                    Dorog szívében, ahol a városi élet és a természet tökéletes
-                    harmóniában egyesül. Vendégházunk ideális kiindulópont mind
-                    a város felfedezéséhez, mind a környék természeti
-                    szépségeinek megismeréséhez.
+                    A Cseresznyefa Vendégház közös folyosóról nyíló két külön
+                    bejáratú, önálló apartmannal 10-11 főnek kínál szállást
+                    Dorogon családi házas övezetben, mégis közel a város
+                    forgatagához.
                   </p>
                 </div>
                 <div class="relative pl-6 border-l-2 border-primary/20">
                   <p class="text-lg font-light leading-relaxed">
-                    Két, teljesen felszerelt apartmanunk várja a vendégeket,
-                    ahol minden gondoskodás megtalálható a kellemes pihenéshez.
-                    Modern berendezések, kényelmes ágyak és egy teljesen
-                    felszerelt konyha biztosítja, hogy otthon érezze magát
-                    minden vendég.
-                  </p>
-                </div>
-                <div class="relative pl-6 border-l-2 border-primary/20">
-                  <p class="text-lg font-light leading-relaxed">
-                    Közvetlen közelben találhatóak a város nevezetességei,
-                    éttermek és bevásárlási lehetőségek, miközben a csendes,
-                    zöld környezet garantálja a pihentető nyugalmat.
+                    Szállásunk tökéletes választás egy családi feltöltődéshez.
+                    Ha az idő kellemes, a kertünk és a házunk kikapcsolódási
+                    lehetőségeit az egész család élvezheti. A wifi a szálláshely
+                    egész területén ingyenes. Mindkét szállásegység
+                    légkondicionált, saját fürdőszobával, síkképernyős tévével
+                    és felszerelt konyhaegységgel rendelkezik. A frissen
+                    felújított vendégházhoz jakuzzi is tartozik, a kertben pedig
+                    grillezési lehetőség teszi hangulatosabbá a pihenést.
                   </p>
                 </div>
               </div>
@@ -133,99 +128,23 @@
         </motion.div>
       </div>
     </div>
+    <!-- Apartment Section-->
+    <ApartmentSection />
   </div>
 </template>
 
 <script setup lang="ts">
 import { motion } from "motion-v";
-import LocationIcon from "@/components/icons/LocationIcon.vue";
-import ClockIcon from "@/components/icons/ClockIcon.vue";
-import FamilyIcon from "@/components/icons/FamilyIcon.vue";
-
-// Import images
 import heroImage from "@images/apartments/deluxe/2_12.webp";
-import image1 from "@images/apartments/deluxe/2_12.webp";
-import image2 from "@images/apartments/deluxe/2_7.webp";
-import image3 from "@images/apartments/deluxe/2_5.webp";
-import image4 from "@images/apartments/deluxe/2_14.webp";
+import ApartmentSection from "@/components/apartment/ApartmentSection.vue";
 
-// Animation variants
-const heroVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (delay: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: delay * 0.2,
-      ease: "easeOut",
-    },
-  }),
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: index * 0.1,
-      ease: "easeOut",
-    },
-  }),
-};
-
-const contentVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
-
-// Quick info data
-const quickInfo = [
-  {
-    title: "Ideális helyen",
-    description: "Dorog szívében, könnyű megközelíthetőséggel",
-    icon: LocationIcon,
-  },
-  {
-    title: "Rugalmas érkezés",
-    description: "Délután 3-tól bejelentkezés, reggel 10-ig kijelentkezés",
-    icon: ClockIcon,
-  },
-  {
-    title: "Családbarát",
-    description: "Teljesen felszerelt apartmanok, ideális családoknak",
-    icon: FamilyIcon,
-  },
-];
-
-// About section images - ALT: needs refactoring
-const aboutImages = [
-  {
-    src: image1,
-    alt: "Deluxe apartman",
-  },
-  {
-    src: image2,
-    alt: "Kényelmes szoba",
-  },
-  {
-    src: image3,
-    alt: "Modern konyha",
-  },
-  {
-    src: image4,
-    alt: "Környezet",
-  },
-];
+import {
+  heroVariants,
+  cardVariants,
+  contentVariants,
+  quickInfo,
+  aboutImages,
+} from "@/data/HomePageData";
 </script>
 
 <style scoped>

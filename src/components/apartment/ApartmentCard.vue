@@ -74,5 +74,3 @@ const props = defineProps<{
   isSelected: boolean;
 }>();
 </script>
-
-<style scoped></style>
