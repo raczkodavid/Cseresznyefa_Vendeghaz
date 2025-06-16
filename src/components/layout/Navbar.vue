@@ -33,6 +33,12 @@
           <li>
             <router-link to="/activities"> Szabadidő & Étkezés </router-link>
           </li>
+          <li>
+            <a
+              href="https://www.digithotel.eu/booking_new/index.php?db=cseresznyefa&kod=90008f"
+              >Foglalás</a
+            >
+          </li>
         </ul>
       </div>
       <router-link to="/" class="pl-3">
@@ -53,6 +59,12 @@
         </li>
         <li>
           <router-link to="/activities"> Szabadidő & Étkezés </router-link>
+        </li>
+        <li>
+          <a
+            href="https://www.digithotel.eu/booking_new/index.php?db=cseresznyefa&kod=90008f"
+            >Foglalás</a
+          >
         </li>
       </ul>
     </div>

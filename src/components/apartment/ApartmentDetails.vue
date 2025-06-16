@@ -67,7 +67,11 @@
       </div>
       <div class="flex justify-end gap-4 pt-4">
         <button class="btn btn-ghost" @click="handleClose">Bezárás</button>
-        <button class="btn btn-primary">Foglalás</button>
+        <a
+          class="btn btn-primary"
+          href="https://www.digithotel.eu/booking_new/index.php?db=cseresznyefa&kod=90008f"
+          >Foglalás</a
+        >
       </div>
     </div>
   </div>

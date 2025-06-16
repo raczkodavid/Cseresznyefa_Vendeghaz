@@ -29,8 +29,7 @@
             :whileInView="heroVariants.visible(2)"
             class="text-xl md:text-2xl text-base-content/80 max-w-2xl mx-auto leading-relaxed"
           >
-            Ismerje meg vendégházunkat, Dorog szívében, ahol kényelem és
-            otthonosság várja!
+            Ismerje meg apartmanunkat Dorogon, ahol a pihenés élménnyé válik.
           </motion.p>
         </div>
       </div>

@@ -33,8 +33,8 @@
               <p
                 class="text-xl md:text-2xl font-light text-white/90 max-w-2xl mx-auto leading-relaxed"
               >
-                Üdvözöljük Dorog szívében, ahol a kényelem és otthonosság
-                találkozik a természet szépségével.
+                Ismerje meg apartmanunkat Dorogon, ahol a pihenés élménnyé
+                válik.
               </p>
             </motion.div>
           </div>
