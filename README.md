@@ -12,11 +12,10 @@ A modern, responsive website for Cseresznyefa Vendégház (Guesthouse) built wit
 
 ## ✨ Features
 
-- 🖼️ **Stunning UI** - Beautiful, responsive design with elegant animations using GSAP
+- 🖼️ **Stunning UI** - Beautiful, responsive design with elegant animations
 - 🏠 **Apartment Showcase** - Display different apartment types with detailed information
 - 🧭 **Activities Explorer** - Browse local attractions, dining options, and activities
 - 📱 **Fully Responsive** - Perfect experience on all devices from mobile to desktop
-- 🔍 **SEO Friendly** - Optimized for search engines to increase visibility
 - 🌙 **Modern UI Components** - Built with Tailwind CSS and DaisyUI for a sleek appearance
 - ⚡ **Fast Performance** - Optimized loading times with Vite's build system
 
