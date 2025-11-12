@@ -105,7 +105,7 @@ yarn preview
 
 ![Activities](screenshots/activities.png)
 
-## 👤 Author
+##  Author
 
 - Name: Raczkó Dávid
 - Email: [raczkodavid@gmail.com](mailto:raczkodavid@gmail.com)
