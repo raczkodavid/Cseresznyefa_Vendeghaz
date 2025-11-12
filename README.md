@@ -1,4 +1,4 @@
-# 🏡 Cseresznyefa Vendégház
+# Cseresznyefa Vendégház
 
 [![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -8,18 +8,18 @@
 
 A modern, responsive website for Cseresznyefa Vendégház (Guesthouse) built with Vue 3, TypeScript, and Vite. Showcasing beautiful accommodations, local activities, and all amenities available to guests.
 
-🌐 **[View Live Demo](https://cseresznyefa-vendeghaz.vercel.app/)**
+ **[View Live Demo](https://cseresznyefa-vendeghaz.vercel.app/)**
 
-## ✨ Features
+##  Features
 
-- 🖼️ **Stunning UI** - Beautiful, responsive design with elegant animations
-- 🏠 **Apartment Showcase** - Display different apartment types with detailed information
-- 🧭 **Activities Explorer** - Browse local attractions, dining options, and activities
-- 📱 **Fully Responsive** - Perfect experience on all devices from mobile to desktop
-- 🌙 **Modern UI Components** - Built with Tailwind CSS and DaisyUI for a sleek appearance
-- ⚡ **Fast Performance** - Optimized loading times with Vite's build system
+-  **Stunning UI** - Beautiful, responsive design with elegant animations
+-  **Apartment Showcase** - Display different apartment types with detailed information
+-  **Activities Explorer** - Browse local attractions, dining options, and activities
+-  **Fully Responsive** - Perfect experience on all devices from mobile to desktop
+-  **Modern UI Components** - Built with Tailwind CSS and DaisyUI for a sleek appearance
+-  **Fast Performance** - Optimized loading times with Vite's build system
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Frontend Framework**: Vue.js 3.5 with Composition API
 - **Type Safety**: TypeScript 5.8
@@ -30,7 +30,7 @@ A modern, responsive website for Cseresznyefa Vendégház (Guesthouse) built wit
 - **Utility**: VueUse Core
 - **Code Quality**: Prettier
 
-## 📋 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -48,7 +48,7 @@ src/
 └── router.ts      # Vue Router configuration
 ```
 
-## 🚀 Setup and Installation
+##  Setup and Installation
 
 ### Prerequisites
 
@@ -96,7 +96,7 @@ npm run preview
 yarn preview
 ```
 
-## 📸 Screenshots
+##  Screenshots
 
 ![Homepage](screenshots/homepage.png)
 ![Homepage2](screenshots/homepage2.png)
